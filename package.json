@@ -1,21 +1,23 @@
 {
-  "name": "sw-sprints-cli-practice",
+  "name": "fe-sprint-cli-practice",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha getListMultiplesOfTwo.test.js",
+    "start": "",
+    "test": "mocha getListMultiplesOfTwo.test.js --timeout 50000 --reporter mocha-multi-reporters --reporter-options configFile=multi-reporters.json",
     "report": "mocha getListMultiplesOfTwo.test.js --sort --reporter @mochajs/json-file-reporter",
-    "submit": "codestates-submission"
+    "submit": "codestates"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@codestates-cc/submission-npm": "^1.1.2",
     "range": "^0.0.3"
   },
   "devDependencies": {
+    "codestates-assignment-manager": "^1.7.0",
+    "mocha-multi-reporters": "^1.5.1",
     "@mochajs/json-file-reporter": "^1.3.0",
     "chai": "^4.3.4",
     "mocha": "^8.3.2"
