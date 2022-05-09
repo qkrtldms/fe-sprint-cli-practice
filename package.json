@@ -12,9 +12,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "range": "^0.0.3"
-  },
   "devDependencies": {
     "codestates-assignment-manager": "^1.7.0",
     "mocha-multi-reporters": "^1.5.1",
